@@ -10,7 +10,7 @@ public class Program {
 
     public static void main(String[] args) throws IOException{
         ArrayList<Integer> lista = new ArrayList<Integer>();
-        lista = readNumber("C:\\Users\\heito\\IdeaProjects\\adventofcode\\src\\main\\java\\Day1\\input.txt");
+        lista = readNumber("src/main/java/Day1/input.txt");
         System.out.println("====== Day 1 =======");
         System.out.println("Part one: " + solvePartOne(lista));
         System.out.println("Part two: " + solvePartTwo(lista));

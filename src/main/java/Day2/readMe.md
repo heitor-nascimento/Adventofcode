@@ -1,4 +1,4 @@
-##--- Day 2: Password Philosophy ---
+<h2>--- Day 2: Password Philosophy ---</h2>
 
 Your flight departs in a few days from the coastal airport; the easiest way down to the coast from here is via toboggan.
 
@@ -24,7 +24,7 @@ How many passwords are valid according to their policies?
     Your puzzle answer was <strong><em>493</em></strong>.
 </details>
 
-##--- Part Two ---
+<h2> --- Part Two --- </h2>
 
 While it appears you validated the passwords correctly, they don't seem to be what the Official Toboggan Corporate Authentication System is expecting.
 

@@ -9,7 +9,7 @@ import static java.lang.Integer.parseInt;
 public class Program {
     public static void main(String[] args) throws IOException{
         ArrayList<String> lista = new ArrayList();
-        String path = "C:\\Users\\heito\\Documents\\adventofcode\\adventofcode\\src\\main\\java\\com\\mycompany\\adventofcode\\Day2\\day2.txt";
+        String path = "src/main/java/Day2/input.txt";
         lista = readFile(path);
         System.out.println("==========EXERCÍCIO 2 ==========");
         System.out.println("Part one solution: " + solvePartOne(lista));
