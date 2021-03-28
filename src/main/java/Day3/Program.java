@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Program {
 
     public static void main(String[] args) throws IOException{
-        ArrayList<String> lista = new ArrayList();
+        ArrayList<String> lista;
         String path = "src/main/java/Day3/input.txt";
         lista = readFile(path);
         System.out.println("==========EXERCÍCIO 3 ==========");
@@ -49,12 +49,7 @@ public class Program {
     }
 
 
-    public static int solvePartTwo(ArrayList<String> lista){
-        return 0;
-    }
-
-
-    public static ArrayList readFile(String path) throws IOException {
+    public static ArrayList<String> readFile(String path) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         String linha;
         ArrayList<String> linhas = new ArrayList();
