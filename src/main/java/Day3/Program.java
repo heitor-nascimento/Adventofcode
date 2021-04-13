@@ -52,7 +52,7 @@ public class Program {
     public static ArrayList<String> readFile(String path) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         String linha;
-        ArrayList<String> linhas = new ArrayList();
+        ArrayList<String> linhas = new ArrayList<String>();
 
         while((linha = br.readLine()) != null){
             linhas.add(linha);

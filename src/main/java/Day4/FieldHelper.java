@@ -61,8 +61,46 @@ public class FieldHelper {
         return false;
     }
 
-    public static boolean validateByr(ArrayList<String> lista){
-        return false;
+    public static boolean validateByr(String byr){
+        Integer birth = Integer.parseInt(byr);
+        if(birth < 9999 && birth >= 1920 && birth <= 2002)
+            return true;
+        else
+            return false;
+    }
+
+    public static boolean validateIyr(String s){
+        Integer Issue = Integer.parseInt(s);
+        if(Issue < 9999 && Issue >= 2010 && Issue <= 2020)
+            return true;
+        else
+            return false;
+    }
+
+    public static boolean validateEyr(String s){
+        Integer Expiration = Integer.parseInt(s);
+        if(Expiration < 9999 && Expiration >= 2020 && Expiration <= 2030)
+            return true;
+        else
+            return false;
+    }
+
+    public static boolean validatePid(String s){
+        Integer Passport = Integer.parseInt(s);
+        return (Passport < 999999999);
+    }
+
+    public static boolean validateEcl(String s){
+        if(s.equals(Ecl.amb.toString())
+        || s.equals(Ecl.blu.toString())
+        || s.equals(Ecl.brn.toString())
+        || s.equals(Ecl.grn.toString())
+        || s.equals(Ecl.gry.toString())
+        || s.equals(Ecl.hzl.toString())
+        || s.equals(Ecl.oth.toString()))
+            return true;
+        else
+            return false;
     }
 
     public static boolean verifyFields(ArrayList<String> itens){

@@ -16,10 +16,10 @@ public class Program {
         System.out.println("Part two: " + solvePartTwo(lista));
     }
 
-    public static ArrayList readNumber(String path) throws IOException {
+    public static ArrayList<Integer> readNumber(String path) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         String linha;
-        ArrayList<Integer> numbers = new ArrayList();
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
 
         while ((linha = br.readLine()) != null) {
             int number = Integer.parseInt(linha);

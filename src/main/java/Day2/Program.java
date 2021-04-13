@@ -8,7 +8,7 @@ import static java.lang.Integer.parseInt;
 
 public class Program {
     public static void main(String[] args) throws IOException{
-        ArrayList<String> lista = new ArrayList();
+        ArrayList<String> lista = new ArrayList<String>();
         String path = "src/main/java/Day2/input.txt";
         lista = readFile(path);
         System.out.println("==========EXERCÍCIO 2 ==========");
@@ -53,10 +53,10 @@ public class Program {
         return counter2;
     }
 
-    public static ArrayList readFile(String path) throws IOException {
+    public static ArrayList<String> readFile(String path) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         String linha;
-        ArrayList<String> linhas = new ArrayList();
+        ArrayList<String> linhas = new ArrayList<String>();
 
         while((linha = br.readLine()) != null){
             linhas.add(linha);
